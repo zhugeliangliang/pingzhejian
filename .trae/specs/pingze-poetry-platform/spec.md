@@ -17,7 +17,7 @@
 
 - 新增功能：诗词创作、平仄检测、词牌库、作品管理
 - 技术栈：React + Vite + TypeScript + TailwindCSS
-- 数据存储：LocalStorage (本地) + 可扩展的后端接口
+- 数据库：阿里云云原生数据仓库 AnalyticDB PostgreSQL版
 
 ## ADDED Requirements
 
@@ -59,11 +59,11 @@
 
 #### Scenario: 保存作品
 - **WHEN** 用户点击保存
-- **THEN** 作品保存到本地存储，包含时间戳和修改记录
+- **THEN** 作品保存到 AnalyticDB PostgreSQL 数据库，包含时间戳和修改记录
 
 #### Scenario: 作品列表
 - **WHEN** 用户查看作品集
-- **THEN** 系统按时间顺序展示所有作品，支持搜索和筛选
+- **THEN** 系统从 AnalyticDB PostgreSQL 查询并展示所有作品，支持搜索和筛选
 
 ### Requirement: 分享功能
 系统 shall 支持将作品导出为图片或文本格式分享。
