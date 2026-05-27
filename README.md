@@ -11,9 +11,9 @@
 
 ## 技术栈
 
-- 前端：React + TypeScript
-- 后端：Node.js + Express
-- 数据库：MongoDB
+- 前端：vue3 + TypeScript
+- 后端：springboot
+- 数据库：mysql
 
 ## 快速开始
 
